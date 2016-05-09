@@ -1,0 +1,21 @@
+{
+  "request" : {
+    "method" : "POST",
+    "path" : "/webmovies/library/tvshow",
+    "body" : {
+    	"name" : "Imprisioned Construction",
+    	"year" : "2005",
+    	"productionCompany" : "BOX"
+    }
+  },
+  "response" : {
+    "status" : 201,
+    "body" : {
+    	"id" : "${contract.anyNumber}",
+    	"name" : "Imprisioned Construction",
+    	"year" : "2005",
+    	"productionCompany" : "BOX",
+    	"addedOn" : "${contract.timestamp}"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "request" : {
+    "method" : "GET",
+    "path" : "/webmovies/library/tvshow/${contract.anyString}"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : {
+    	"id" : "${contract.anyNumber}",
+    	"name" : "${contract.anyString}",
+    	"year" : "${contract.anyNumber}",
+    	"productionCompany" : "${contract.anyString}",
+    	"addedOn" : "${contract.timestamp}"
+    }
+  }
+}
